@@ -28,11 +28,11 @@
             }
             
             #fondo {
-                background-color: #FA8072;
+                background-color: #03549B;
             }
             
             footer {
-                background-color: #FA8072;
+                background-color: #03549B;
                 text-align: left;
                 /*Texto a la izquierda*/
                 padding: 5px 10px;
@@ -45,7 +45,8 @@
             }
             
             footer a:hover {
-                background-color: #CD5C5C;
+                background-color: #88AFD1;
+                ;
                 /*Color al menu cuando pasamos el mouse por encima*/
             }
             
@@ -469,7 +470,7 @@
             
             @media(min-width: 600px) and (max-width: 1023px) {
                 #fondo {
-                    background-color: green;
+                    background-color: #03549B;
                 }
                 .loguito {
                     width: 30px;
@@ -481,7 +482,7 @@
                 }
                 .principalCentro a {
                     color: white;
-                    background-color: green;
+                    background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
                     ;
                 }
                 /* Redes Sociales */
@@ -594,7 +595,7 @@
                     padding: 0;
                 }
                 #fondo {
-                    background-color: #FA8072;
+                    background-color: #03549B;
                 }
                 .loguito {
                     width: 20px;
@@ -606,7 +607,7 @@
                 }
                 .principalCentro a {
                     color: white;
-                    background-color: #FA8072;
+                    background-color: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
                     ;
                 }
                 .principalCentro li a:hover {
