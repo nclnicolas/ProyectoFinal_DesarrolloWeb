@@ -1,0 +1,285 @@
+html {
+    font-family: 'Cinzel', serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ESTILOS DISNEY */
+
+.fondoDisney {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/fondodisney.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.container {
+    width: 1100px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjetaMayor {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 350px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+}
+
+.frente,
+.atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.frente {
+    width: 100%;
+}
+
+.atras {
+    transform: rotateY(180deg);
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #FCF3CF;
+}
+
+.tarjetaMayor:hover .tarjeta {
+    transform: rotateY(180deg);
+}
+
+.caja1 {
+    background-image: url(../Imagenes/hakunamatata.png);
+    background-size: cover;
+}
+
+.caja2 {
+    background-image: url(../Imagenes/olaf.png);
+    background-size: cover;
+}
+
+.caja3 {
+    background-image: url(../Imagenes/shrek.png);
+    background-size: cover;
+}
+
+
+/* ****************************************************** */
+
+
+/* ESTILOS HOTELES */
+
+.fondoImagen {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/hoteles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.reserva {
+    color: white;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    text-align: center;
+}
+
+.reserva h1 {
+    font-size: 7rem;
+}
+
+.reserva p {
+    font-size: 1.5rem;
+    margin: 15px 30px;
+}
+
+.reserva a {
+    font-size: 1.3rem;
+    display: inline-block;
+    padding: 15px 20px;
+    color: white;
+    background-color: #FA8072;
+}
+
+.reserva a:hover {
+    background: #CD5C5C;
+    border: 2px solid #fff;
+    padding: 13px 18px;
+}
+
+
+/* **************************************************** */
+
+
+/* ESTILOS PAQUETES */
+
+.fondoPaquetes {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/paquetes.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.pedido {
+    width: 400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 30px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 4px;
+    color: white;
+}
+
+.pedido h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.pedido .controles {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid blue;
+    font-size: 18px;
+    color: white;
+}
+
+.pedido p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.pedido a:hover {
+    text-decoration: underline;
+}
+
+.pedido .boton {
+    width: 100%;
+    padding: 12px;
+    margin: 16px 0;
+    font-size: 16px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    color: white;
+}
+
+
+/* RESPONSIVE */
+
+
+/* Smartphone */
+
+@media (max-width: 599px) {
+    /* PAQUETES */
+    .pedido {
+        width: 400px;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        padding: 20px;
+        margin: auto;
+        margin-top: 10px;
+        border-radius: 4px;
+        color: white;
+    }
+    .pedido .controles {
+        width: 90%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+        padding: 5px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+        border: 1px solid blue;
+        font-size: 18px;
+        color: white;
+    }
+    .pedido h4 {
+        font-size: 15px;
+    }
+    .pedido p {
+        font-size: 15px;
+    }
+}
+
+
+/* ******************************* */
+
+
+/* HOTELES */
+
+.reserva {
+    top: 50%;
+}
+
+.reserva h1 {
+    font-size: 5rem;
+}
+
+
+/* ****************************** */
+
+
+/* DISNEY */
+
+.container {
+    width: 480px;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.tarjetaMayor {
+    margin: 10px;
+    -webkit-perspective: 800;
+    perspective: 800;
+}
+
+.tarjeta {
+    width: 300px;
+    height: 300px;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+    position: relative;
+    transform-style: preserve-3d;
+    transition: .7s ease;
+    right: 300px;
+}
+
+.caja1 {
+    background-image: none;
+}
+
+.caja2 {
+    background-image: none;
+}
+
+.caja3 {
+    background-image: url(../Imagenes/shrek.png);
+    background-size: cover;
+}

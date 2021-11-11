@@ -1,0 +1,611 @@
+            /* ESTILO INDEX */
+            
+            .fondoHome {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/home.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 200vh;
+                position: relative;
+            }
+            
+            html {
+                font-family: 'Cinzel', serif;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+            }
+            
+            header h4 {
+                color: white;
+            }
+            
+            .loguito {
+                width: 50px;
+                /*Tamaño del logo*/
+            }
+            
+            #fondo {
+                background-color: #FA8072;
+            }
+            
+            footer {
+                background-color: #FA8072;
+                text-align: left;
+                /*Texto a la izquierda*/
+                padding: 5px 10px;
+            }
+            
+            footer a {
+                display: block;
+                /*Menu en bloque*/
+                color: white;
+            }
+            
+            footer a:hover {
+                background-color: #CD5C5C;
+                /*Color al menu cuando pasamos el mouse por encima*/
+            }
+            
+            .principalCentro {
+                text-align: center;
+                /*Texto del menu al centro*/
+                background-color: #FCF3CF;
+                /* Le da una sombra al menu para que se transparente la imagen del fondo */
+                background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+            }
+            
+            .principalCentro li a:hover {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+                /*Color al menu cuando pasamos el mouse por encima*/
+            }
+            
+            a {
+                text-decoration: none;
+                /*Borrar decoracion del enlace*/
+                color: white;
+                display: block;
+                /*Hace bloque el link*/
+                padding: 5px 30px;
+                /*Tamaño del menu*/
+            }
+            /* DESTINOS */
+            
+            .destinos {
+                width: 20%;
+                height: 200vh;
+                display: flex;
+                flex-flow: column wrap;
+                /* Imagenes en columna */
+                justify-content: flex-start;
+                /* Los alineamos a la izquierda */
+                justify-content: space-around;
+                /* Le dejamos un espacion uno del otro */
+            }
+            
+            .lugares {
+                position: relative;
+                bottom: 50px;
+                width: 200px;
+                height: 200px;
+            }
+            
+            .lugares a {
+                display: block;
+                color: #FCF3CF;
+                position: relative;
+                bottom: 200px;
+                left: 10px;
+            }
+            
+            .destinos h2 {
+                position: relative;
+                left: 40px;
+                color: #FCF3CF;
+            }
+            
+            .centro {
+                display: flex;
+                flex-flow: row wrap;
+            }
+            
+            .trans {
+                transition: width 3s, height 2s;
+            }
+            
+            .trans:hover {
+                width: 200px;
+                height: 300px;
+            }
+            /* SUB MENU */
+            
+            .principalCentro ul {
+                list-style: none;
+                font-size: 0
+            }
+            
+            ul ul {
+                position: absolute;
+                display: none;
+                background-color: #FCF3CF;
+            }
+            
+            li {
+                display: inline-block;
+                width: 10%;
+                position: relative;
+                font-size: 18px;
+            }
+            
+            ul ul li {
+                display: block;
+            }
+            
+            ul li:hover ul {
+                display: block;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            }
+            /* ----------- */
+            /* REDES SOCIALES */
+            
+            .social {
+                position: fixed;
+                right: 0;
+                top: 35%;
+                font-size: 1.5rem;
+                /* Tamaño de fuente */
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                /* Alineacion a la parte inferior */
+                z-index: 100;
+                /* Ubicacion encima del resto de los elementos de la pagina */
+            }
+            
+            .icon {
+                color: white;
+                text-decoration: none;
+                padding: .7rem;
+                display: flex;
+                transition: all .5s;
+                /* Forma de animar los cambios */
+            }
+            
+            .icon-facebook {
+                background: #2e406e;
+            }
+            
+            .icon-twitter {
+                background: #339dc5;
+            }
+            
+            .icon-whatsapp {
+                background: greenyellow;
+            }
+            
+            .icon-instagram {
+                background: #cb2027;
+            }
+            
+            .icon:hover {
+                padding-right: 3rem;
+                border-radius: 1rem 0 0 1rem;
+                /* Borde redondeao en las esquinas superior e inferior izquierda */
+                box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.42);
+            }
+            /* Borde redondeado a los icones el last es por si agregamos mas iconos ya tienen los bordes redondeados */
+            
+            .icon:first-child {
+                border-radius: 1rem 0 0 0;
+            }
+            
+            .icon:last-child {
+                border-radius: 0 0 0 1rem;
+            }
+            /* -------------- */
+            
+            .imagenVuelo {
+                width: 1%;
+                height: 50vh;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-end;
+                justify-content: space-around;
+            }
+            
+            .caja {
+                width: 100px;
+                height: 200px;
+            }
+            
+            .caja h3 {
+                display: block;
+                font-family: 'Cinzel', serif;
+                color: #FCF3CF;
+                position: relative;
+                left: 200px;
+                top: 100px;
+            }
+            
+            .videoDisney .caja h3 {
+                font-family: 'Cinzel', serif;
+                color: #FCF3CF;
+                position: relative;
+                left: 100px;
+                top: 400px;
+            }
+            
+            .imagenPlaya {
+                height: 150vh;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-end;
+                justify-content: space-around;
+            }
+            
+            .videoDisney {
+                height: 200vh;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: flex-end;
+                justify-content: space-around;
+            }
+            
+            .imagenVuelo img {
+                display: block;
+                position: relative;
+                bottom: 170px;
+                left: 420px;
+                width: 300px;
+                height: 300px;
+                margin: auto;
+                border: 2px solid #FCF3CF;
+            }
+            
+            .imagenPlaya img {
+                display: block;
+                position: relative;
+                bottom: 150px;
+                left: 400px;
+                width: 300px;
+                height: 300px;
+                margin: auto;
+                border: 2px solid #FCF3CF;
+            }
+            
+            .videoDisney iframe {
+                display: block;
+                position: relative;
+                top: 160px;
+                left: 280px;
+                width: 350px;
+                height: 300px;
+                margin: auto;
+                border: 2px solid #FCF3CF;
+            }
+            /* ESTILO VUELOS */
+            
+            .fondoVuelo {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/vuelos.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+                position: relative;
+            }
+            
+            table {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+                /* Sacar espacio entre celdas */
+                border-collapse: collapse;
+                /* Centrar tabla */
+                margin: 100px auto;
+                width: 600px;
+                /* ----- */
+            }
+            
+            th,
+            td {
+                /* Darle lineas */
+                /*border: solid 1px black;*/
+                /* Darle espacio a la tabla */
+                padding: 10px;
+                color: white;
+            }
+            
+            table a {
+                text-align: left;
+            }
+            
+            thead {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                color: #CD5C5C;
+            }
+            
+            tr:nth-child(even) {
+                /* Selecciona los tr hijos impares */
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            }
+            
+            tr:hover td {
+                /* Color iluminado */
+                background-color: #FA8072;
+                /* Color de las letras al pasar el mouse */
+                color: white;
+            }
+            /* --------------------------- */
+            /* ESTILOS PROMOCIONES */
+            
+            .fondoPromociones {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/promociones.jpg);
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 100vh;
+                position: relative;
+            }
+            
+            .area-Bancos {
+                display: grid;
+                grid-template-areas: "frances galicia hipotecario" "ciudad santander mercadopago";
+                /* Definimos como van a ser las filas */
+                grid-template-columns: 2fr 2fr 2fr;
+                /* Tamaño de columna */
+                grid-template-rows: 40vh 300px;
+                /* Tamaño de fila */
+                grid-column-gap: 10px;
+                /* Espacio entre columnas */
+                grid-row-gap: 15px;
+                /* Espacio entre filas */
+                padding: 70px;
+            }
+            /* Nombrar cada area */
+            
+            .bancoFrances {
+                grid-area: frances;
+            }
+            
+            .bancoGalicia {
+                grid-area: galicia;
+            }
+            
+            .bancoHipotecario {
+                grid-area: hipotecario;
+            }
+            
+            .bancoCiudad {
+                grid-area: ciudad;
+            }
+            
+            .bancoSantander {
+                grid-area: santander;
+            }
+            
+            .mercadoPago {
+                grid-area: mercadopago;
+            }
+            /* --------- */
+            
+            .promociones {
+                height: 100vh;
+            }
+            
+            .mercadoPago img {
+                width: 100px;
+                height: 50px;
+                /* Animacion */
+                animation-name: anima;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+            
+            .bancoSantander img {
+                width: 100px;
+                height: 50px;
+                /* Animacion */
+                animation-name: anima;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+            
+            .bancoCiudad img {
+                width: 100px;
+                height: 50px;
+                /* Animacion */
+                animation-name: anima;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+            
+            .bancoHipotecario img {
+                width: 100px;
+                height: 50px;
+                /* Animacion */
+                animation-name: anima;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+            
+            .bancoGalicia img {
+                width: 100px;
+                height: 50px;
+                /* Animacion */
+                animation-name: anima;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+            
+            .bancoFrances img {
+                width: 100px;
+                height: 50px;
+                /* Animacion */
+                animation-name: anima;
+                animation-iteration-count: infinite;
+                animation-duration: 3s;
+            }
+            /* Animacion */
+            
+            @keyframes anima {
+                0%/* Origen */
+                {}
+                50% {
+                    transform: translate(150px);
+                }
+                100%/* Final */
+                {}
+            }
+            
+            .centrado-H4 h4 {
+                text-align: center;
+                color: #FCF3CF;
+            }
+            /* ------------------------- */
+            /* RESPONSIVE */
+            /* Tablet */
+            
+            @media(min-width: 600px) and (max-width: 1023px) {
+                #fondo {
+                    background-color: green;
+                }
+                .loguito {
+                    width: 30px;
+                    /*Tamaño del logo*/
+                }
+            }
+            /* Smartphone */
+            
+            @media (max-width: 599px) {
+                html {
+                    font-family: 'Cinzel', serif;
+                }
+                * {
+                    margin: 0;
+                    padding: 0;
+                }
+                #fondo {
+                    background-color: #FA8072;
+                }
+                .loguito {
+                    width: 20px;
+                    /*Tamaño del logo*/
+                }
+                /* Menu del centro */
+                .principalCentro li {
+                    display: inline;
+                }
+                .principalCentro a {
+                    color: white;
+                    background-color: #FA8072;
+                    ;
+                }
+                .principalCentro li a:hover {
+                    background-color: #CD5C5C;
+                    /*Color al menu cuando pasamos el mouse por encima*/
+                }
+                /* ******************************** */
+                /* Redes Sociales */
+                .social {
+                    position: absolute;
+                    /* Queda quieto el logo de redes y no tapa el precio de la tabla */
+                    right: 0;
+                    top: -1%;
+                    font-size: 1.5rem;
+                    /* Tamaño de fuente */
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    /* Alineacion a la parte inferior */
+                    z-index: 100;
+                    /* Ubicacion encima del resto de los elementos de la pagina */
+                }
+                /* ******************************** */
+                /* Imagenes del centro, con display none las sacamos */
+                .imagenVuelo {
+                    display: none;
+                }
+                .imagenPlaya {
+                    display: none;
+                }
+                .videoDisney {
+                    display: none;
+                }
+                /* ********************************* */
+                /* DESTINOS */
+                .destinos {
+                    height: 172vh;
+                }
+                .destinos h2 {
+                    position: relative;
+                    left: 10px;
+                    color: #FCF3CF;
+                }
+                .destinos img {
+                    position: relative;
+                    left: 150px;
+                    bottom: 10px;
+                }
+                .lugares a {
+                    display: block;
+                    color: #FCF3CF;
+                    position: relative;
+                    bottom: 200px;
+                    left: 170px;
+                }
+                .trans {
+                    transition: width 3s, height 2s;
+                }
+                .trans:hover {
+                    width: 200px;
+                    height: 300px;
+                }
+                /* ************************************ */
+                /* ESTILO VUELOS */
+                table {
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                    text-align: left;
+                    font-family: Arial, Helvetica, sans-serif;
+                    /* Sacar espacio entre celdas */
+                    border-collapse: collapse;
+                    /* Centrar tabla */
+                    margin: 100px auto;
+                    width: auto;
+                    /* ----- */
+                }
+                /* --------------------------- */
+                /* PROMOCIONES */
+                @keyframes anima {}
+                .area-Bancos {
+                    padding: 30px;
+                }
+                .centrado-H4 h4 {
+                    font-size: 12px;
+                }
+                .bancoFrances img {
+                    position: relative;
+                    left: 10px;
+                }
+                .mercadoPago img {
+                    position: relative;
+                    left: 10px;
+                }
+                .bancoSantander img {
+                    position: relative;
+                    left: 10px;
+                }
+                .bancoCiudad img {
+                    position: relative;
+                    left: 10px;
+                }
+                .bancoHipotecario img {
+                    position: relative;
+                    left: 10px;
+                }
+                .bancoGalicia img {
+                    position: relative;
+                    left: 10px;
+                }
+            }

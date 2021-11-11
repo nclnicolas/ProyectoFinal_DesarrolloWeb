@@ -1,0 +1,178 @@
+            html {
+                font-family: 'Cinzel', serif;
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            $colorLetra:white;
+            $colorFondo: #FA8072;
+            /* ESTILOS DISNEY */
+            
+            .fondoDisney {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/fondodisney.jpg);
+                background-repeat: no-repeat; //no se repite la imagen en caso que sea mas chica
+                background-position: center; //posicionada al centro
+                background-size: cover; //ocupa toda la pantalla
+                height: 100vh; //cubre 100% de la pagina
+                position: relative;
+            }
+            
+            .container {
+                width: 1100px;
+                margin: 50px auto;
+                display: flex; //uno al lado del otro
+                justify-content: center;
+            }
+            
+            .tarjetaMayor {
+                margin: 10px; //espacio entre cada uno 
+                -webkit-perspective: 800;
+                perspective: 800; //pasamos el mouse y gira de una manera mas leve
+            }
+            
+            .tarjeta {
+                width: 300px;
+                height: 350px;
+                /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); */
+                position: relative;
+                transform-style: preserve-3d; //al pasar el mouse se ve la parte trasera de la caja
+                transition: .7s ease; // al pasar el mouse gira la caja 0.7segundos
+            }
+            
+            .frente,
+            .atras {
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                backface-visibility: hidden; //si el elemento rota no se muestra la parte trasera
+                -webkit-backface-visibility: hidden; //el webkite es por que el backface puede no funcionar en chrome
+            }
+            
+            .frente {
+                width: 100%;
+            }
+            
+            .atras {
+                transform: rotateY(180deg); //hace que la caja rote 180 grados
+                padding: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                color: #FCF3CF;
+            }
+            
+            .tarjetaMayor:hover .tarjeta {
+                transform: rotateY(180deg); //la caja rota al pasar el mouse
+            }
+            
+            .caja1 {
+                background-image: url(../Imagenes/hakunamatata.png);
+                background-size: cover; //para que se vea por completo la imagen
+            }
+            
+            .caja2 {
+                background-image: url(../Imagenes/olaf.png);
+                background-size: cover;
+            }
+            
+            .caja3 {
+                background-image: url(../Imagenes/shrek.png);
+                background-size: cover;
+            }
+            /* ****************************************************** */
+            /* ESTILOS HOTELES */
+            
+            .fondoImagen {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/hoteles.jpg);
+                background-repeat: no-repeat; //no se repite la imagen en caso que sea mas chica
+                background-position: center; //posicionada al centro
+                background-size: cover; //ocupa toda la pantalla
+                height: 100vh; //cubre 100% de la pagina
+                position: relative;
+            }
+            
+            .reserva {
+                color: $colorLetra;
+                position: absolute;
+                top: 30%;
+                left: 50%;
+                transform: translate(-50%, -30%);
+                text-align: center;
+                h1 {
+                    font-size: 7rem; //tamaño de letra
+                }
+                p {
+                    font-size: 1.5rem;
+                    margin: 15px 30px;
+                }
+                a {
+                    font-size: 1.3rem;
+                    display: inline-block; //para darle estilo de padding 
+                    padding: 15px 20px; //tamaño del boton
+                    color: $colorLetra;
+                    background-color: $colorFondo;
+                }
+                a:hover {
+                    background: #CD5C5C;
+                    border: 2px solid #fff;
+                    padding: 13px 18px;
+                }
+            }
+            /* **************************************************** */
+            /* ESTILOS PAQUETES */
+            
+            .fondoPaquetes {
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../Imagenes/paquetes.jpg);
+                background-repeat: no-repeat; //no se repite la imagen en caso que sea mas chica
+                background-position: center; //posicionada al centro
+                background-size: cover; //ocupa toda la pantalla
+                height: 100vh; //cubre 100% de la pagina
+                position: relative;
+            }
+            
+            .pedido {
+                width: 400px;
+                background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                padding: 30px;
+                margin: auto;
+                margin-top: 50px;
+                border-radius: 4px;
+                color: $colorLetra;
+                h4 {
+                    font-size: 22px; //tamaño de letra
+                    margin-bottom: 20px;
+                }
+                .controles {
+                    width: 100%;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                    padding: 10px;
+                    border-radius: 4px;
+                    margin-bottom: 16px;
+                    border: 1px solid blue;
+                    font-size: 18px;
+                    color: $colorLetra;
+                }
+                p {
+                    height: 40px;
+                    text-align: center;
+                    font-size: 18px;
+                }
+                a:hover {
+                    text-decoration: underline; //muestra subrayado en terminos y condiciones
+                }
+                .boton {
+                    width: 100%;
+                    padding: 12px;
+                    margin: 16px 0;
+                    font-size: 16px;
+                    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+                    color: $colorLetra;
+                }
+            }
